@@ -1,6 +1,10 @@
 
 import 'dart:io';
 import 'dart:convert';
+import 'package:online_store_system/models/clothe_model.dart';
+import 'package:online_store_system/models/device_model.dart';
+import 'package:online_store_system/models/product_model.dart';
+
 
 abstract class UI {
   
@@ -17,13 +21,24 @@ abstract class UI {
 
     switch(input){
       case 1:
-        var file = File("product.json").readAsStringSync();
+        String file = File("product.json").readAsStringSync();
 
-        List data = jsonDecode(file);
+        List dataset = jsonDecode(file);
 
-        for (Map<String,dynamic> element in data){
+        List<DeviceModel> devices;
+        List<ClotheModel> clothes;
+
+        for (Map<String,dynamic> element in dataset){
           
-          
+         
+
+          if (element["category"] == "Electronics"){
+
+          }
+
+          if (element["category"] == "Clothing"){
+            
+          }
 
 
         }
