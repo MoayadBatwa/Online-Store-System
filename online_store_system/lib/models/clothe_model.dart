@@ -8,7 +8,7 @@ class ClotheModel extends ProductModel{
   final String? ageRange;
   final String? material;
 
-  ClotheModel({this.ageRange, this.gender, this.material, this.size, super.id, super.category, super.color, super.name, super.price})
+  ClotheModel({this.ageRange, this.gender, this.material, this.size, super.id, super.category, super.color, super.name, super.price});
 
   
 
